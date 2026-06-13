@@ -1,0 +1,7 @@
+{{- if eq .chezmoi.hostname "ishtar" -}}
+{{- template "soul-ishtar.md" . -}}
+{{- else if eq .chezmoi.hostname "kaltashar" -}}
+{{- template "soul-kaltashar.md" . -}}
+{{- else -}}
+{{- template "soul-telsha.md" . -}}
+{{- end -}}
